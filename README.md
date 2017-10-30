@@ -37,21 +37,6 @@
 6. Stories By Date
 
 
-### Advertising: 
-1. Done: Retrieve Ad info from Dolphin's script string
-2. Done: Send third party impressions until they are confirmed
-3. Done: Tap link for Ad Views
-4. Done: Tap Link in content view
-5. Done: Launch Screen Ad
-6. Done: Native Banner
-7. Done: Web Banner
-8. Done: Paid Post
-9. Done: Show Image if there's time
-10. Done: Parse Video Ad into native
-11. Special Report: Adjustment based on API
-12. Done: In-Page Full Screen: Disable Close Button and Function
-13. MPU New: Adjustment based on Date
-14. Implement new ad setting
 
 
 ### Content Page: 
