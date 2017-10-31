@@ -10,13 +10,31 @@ import UIKit
 
 class PersonInfoViewController: UIViewController {
     
-//    @IBOutlet weak var infoTableView: UITableView!
+    @IBOutlet weak var mySubscribeView: UIView!
+    @IBOutlet weak var myDownloadView: UIView!
+    @IBOutlet weak var mySettingView: UIView!
+    @IBOutlet weak var myLoveView: UIView!
 //    @IBOutlet weak var subscribeTableViewCell: UITableViewCell!
 //    @IBOutlet weak var downloadTableViewCell: UITableViewCell!
 //    @IBOutlet weak var favoritesTableViewCell: UITableViewCell!
 //    @IBOutlet weak var settingTableViewCell: UITableViewCell!
 //    @IBOutlet weak var walletTableViewCell: UITableViewCell!
-    
+    @IBAction func tapMySubscribe(_ sender: Any) {
+
+    }
+    @IBAction func tapMyDownload(_ sender: Any) {
+       if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListPerColumnViewController") as? ListPerColumnViewController
+        {
+            
+            navigationController?.pushViewController(mySubscribeViewController, animated: true)
+        }
+    }
+    @IBAction func tapMySettinge(_ sender: Any) {
+        
+    }
+    @IBAction func tapMyLove(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,52 +46,8 @@ class PersonInfoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    // MARK: - Table view data source
-//
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.section==1 && indexPath.row == 0{
-//            if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MySubscribeViewController") as? MySubscribeViewController {
-//
-//                navigationController?.pushViewController(mySubscribeViewController, animated: true)
-//            }
-//        }
-//        if indexPath.section==1 && indexPath.row == 1{
-//            if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyDownloadViewController") as? MyDownloadViewController {
-//
-//                navigationController?.pushViewController(mySubscribeViewController, animated: true)
-//            }
-//        }
-//
-//        if indexPath.section==1 && indexPath.row == 2{
-//            if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyFavoritesViewController") as? MyFavoritesViewController {
-//
-//                navigationController?.pushViewController(mySubscribeViewController, animated: true)
-//            }
-//        }
-//        if indexPath.section==1 && indexPath.row == 3{
-//            if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MySettingViewController") as? MySettingViewController {
-//
-//                navigationController?.pushViewController(mySubscribeViewController, animated: true)
-//            }
-//        }
-//        if indexPath.section==1 && indexPath.row == 4{
-//            if let mySubscribeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyWalletViewController") as? MyWalletViewController {
-//
-//                navigationController?.pushViewController(mySubscribeViewController, animated: true)
-//            }
-//        }
-//
-//    }
 
 
 

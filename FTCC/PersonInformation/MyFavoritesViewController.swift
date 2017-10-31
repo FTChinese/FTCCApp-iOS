@@ -8,12 +8,15 @@
 
 import UIKit
 
-class MyFavoritesViewController: UIViewController {
-
+class MyFavoritesViewController: InformationViewController, UITableViewDataSource, UITableViewDelegate {
+   
+    var talkListBlock: UITableView!
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +25,26 @@ class MyFavoritesViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
-    */
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 4
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellItem = tableView.dequeueReusableCell(withIdentifier: "CollectTableViewCell", for: indexPath)
+        if let cell = cellItem as? CollectTableViewCell {
+//            cell.itemCell = AudioLists.fetchResults[0].items[indexPath.row]
+            return cell
+        }
+        
+        return cellItem
+    }
 
 }

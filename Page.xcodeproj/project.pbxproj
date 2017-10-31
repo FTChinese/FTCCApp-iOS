@@ -343,6 +343,8 @@
 		F27D9A871F976FBE00A95188 /* story.html in Resources */ = {isa = PBXBuildFile; fileRef = F27D9A7E1F976F4600A95188 /* story.html */; };
 		F289C79B1FA0CF450081A675 /* person-information.html in Resources */ = {isa = PBXBuildFile; fileRef = F23455511FA09F5F001C1AE8 /* person-information.html */; };
 		F289C79C1FA0CF480081A675 /* person-information-big5.html in Resources */ = {isa = PBXBuildFile; fileRef = F23455521FA09F5F001C1AE8 /* person-information-big5.html */; };
+		F28FD6D41FA759E900C26099 /* CollectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD6D21FA759E900C26099 /* CollectTableViewCell.swift */; };
+		F28FD6D51FA759E900C26099 /* CollectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28FD6D31FA759E900C26099 /* CollectTableViewCell.xib */; };
 		F29E19AF1F39A2BC00FAA8C0 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = F29E19AA1F39A2BC00FAA8C0 /* close.png */; };
 		F29E19B01F39A2BC00FAA8C0 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F29E19AB1F39A2BC00FAA8C0 /* cover.jpg */; };
 		F29E19B11F39A2BC00FAA8C0 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = F29E19AC1F39A2BC00FAA8C0 /* mute.png */; };
@@ -357,11 +359,10 @@
 		F2E0906E1F5A6A3900F4409F /* ColumnMyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090601F5A6A3900F4409F /* ColumnMyListCell.swift */; };
 		F2E0906F1F5A6A3900F4409F /* ColumnMyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E090611F5A6A3900F4409F /* ColumnMyListCell.xib */; };
 		F2E090701F5A6A3900F4409F /* ColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090621F5A6A3900F4409F /* ColumnViewController.swift */; };
-		F2E090711F5A6A3900F4409F /* MyDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090641F5A6A3900F4409F /* MyDownloadViewController.swift */; };
+		F2E090711F5A6A3900F4409F /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090641F5A6A3900F4409F /* InformationViewController.swift */; };
 		F2E090721F5A6A3900F4409F /* MyFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090651F5A6A3900F4409F /* MyFavoritesViewController.swift */; };
 		F2E090731F5A6A3900F4409F /* MySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090661F5A6A3900F4409F /* MySettingViewController.swift */; };
 		F2E090741F5A6A3900F4409F /* MySubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090671F5A6A3900F4409F /* MySubscribeViewController.swift */; };
-		F2E090751F5A6A3900F4409F /* MyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090681F5A6A3900F4409F /* MyWalletViewController.swift */; };
 		F2E090761F5A6A3900F4409F /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090691F5A6A3900F4409F /* PersonInfoViewController.swift */; };
 		F2E090791F5A721E00F4409F /* CustomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090771F5A721E00F4409F /* CustomTab.swift */; };
 		F2E0907A1F5A721E00F4409F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E090781F5A721E00F4409F /* CustomTabBarController.swift */; };
@@ -631,6 +632,8 @@
 		F27D9A7C1F976F4600A95188 /* ebook.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ebook.html; path = Page/FTCC/ebook.html; sourceTree = SOURCE_ROOT; };
 		F27D9A7D1F976F4600A95188 /* list.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = list.html; path = Page/FTCC/list.html; sourceTree = SOURCE_ROOT; };
 		F27D9A7E1F976F4600A95188 /* story.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = story.html; path = Page/FTCC/story.html; sourceTree = SOURCE_ROOT; };
+		F28FD6D21FA759E900C26099 /* CollectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTableViewCell.swift; sourceTree = "<group>"; };
+		F28FD6D31FA759E900C26099 /* CollectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTableViewCell.xib; sourceTree = "<group>"; };
 		F29E19AA1F39A2BC00FAA8C0 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = FTCC/Images/close.png; sourceTree = "<group>"; };
 		F29E19AB1F39A2BC00FAA8C0 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cover.jpg; path = FTCC/Images/cover.jpg; sourceTree = "<group>"; };
 		F29E19AC1F39A2BC00FAA8C0 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mute.png; path = FTCC/Images/mute.png; sourceTree = "<group>"; };
@@ -645,11 +648,10 @@
 		F2E090601F5A6A3900F4409F /* ColumnMyListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnMyListCell.swift; sourceTree = "<group>"; };
 		F2E090611F5A6A3900F4409F /* ColumnMyListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnMyListCell.xib; sourceTree = "<group>"; };
 		F2E090621F5A6A3900F4409F /* ColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnViewController.swift; sourceTree = "<group>"; };
-		F2E090641F5A6A3900F4409F /* MyDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDownloadViewController.swift; sourceTree = "<group>"; };
+		F2E090641F5A6A3900F4409F /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		F2E090651F5A6A3900F4409F /* MyFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFavoritesViewController.swift; sourceTree = "<group>"; };
 		F2E090661F5A6A3900F4409F /* MySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySettingViewController.swift; sourceTree = "<group>"; };
 		F2E090671F5A6A3900F4409F /* MySubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySubscribeViewController.swift; sourceTree = "<group>"; };
-		F2E090681F5A6A3900F4409F /* MyWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWalletViewController.swift; sourceTree = "<group>"; };
 		F2E090691F5A6A3900F4409F /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		F2E090771F5A721E00F4409F /* CustomTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTab.swift; path = FTCC/CustomTab.swift; sourceTree = "<group>"; };
 		F2E090781F5A721E00F4409F /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBarController.swift; path = FTCC/CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -1347,12 +1349,13 @@
 		F2E090631F5A6A3900F4409F /* PersonInformation */ = {
 			isa = PBXGroup;
 			children = (
-				F2E090641F5A6A3900F4409F /* MyDownloadViewController.swift */,
+				F2E090641F5A6A3900F4409F /* InformationViewController.swift */,
 				F2E090651F5A6A3900F4409F /* MyFavoritesViewController.swift */,
 				F2E090661F5A6A3900F4409F /* MySettingViewController.swift */,
 				F2E090671F5A6A3900F4409F /* MySubscribeViewController.swift */,
-				F2E090681F5A6A3900F4409F /* MyWalletViewController.swift */,
 				F2E090691F5A6A3900F4409F /* PersonInfoViewController.swift */,
+				F28FD6D21FA759E900C26099 /* CollectTableViewCell.swift */,
+				F28FD6D31FA759E900C26099 /* CollectTableViewCell.xib */,
 			);
 			name = PersonInformation;
 			path = FTCC/PersonInformation;
@@ -1570,6 +1573,7 @@
 				602153671F397C650077A7AF /* Ad.xib in Resources */,
 				F29E19B01F39A2BC00FAA8C0 /* cover.jpg in Resources */,
 				F289C79C1FA0CF480081A675 /* person-information-big5.html in Resources */,
+				F28FD6D51FA759E900C26099 /* CollectTableViewCell.xib in Resources */,
 				601C418E1F99BC8B002D26B2 /* story-big5.html in Resources */,
 				60814F631F580FB200041801 /* BookCell.xib in Resources */,
 				6021538F1F39990E0077A7AF /* LaunchScreen.storyboard in Resources */,
@@ -1885,11 +1889,12 @@
 				602153451F397C650077A7AF /* PagesViewController.swift in Sources */,
 				60F1A52C1F5E98DE0007F9F3 /* IAPView.swift in Sources */,
 				602CD2971F565FD500FFC1EA /* IAPHelper.swift in Sources */,
-				F2E090711F5A6A3900F4409F /* MyDownloadViewController.swift in Sources */,
+				F2E090711F5A6A3900F4409F /* InformationViewController.swift in Sources */,
 				602153461F397C650077A7AF /* AdModel.swift in Sources */,
 				602153471F397C650077A7AF /* AsyncTextAttachment.swift in Sources */,
 				602153481F397C650077A7AF /* ContentItemViewController.swift in Sources */,
 				602153491F397C650077A7AF /* NowPlayingCenter.swift in Sources */,
+				F28FD6D41FA759E900C26099 /* CollectTableViewCell.swift in Sources */,
 				F2E090821F5A736E00F4409F /* CustomPresentController.swift in Sources */,
 				6021534B1F397C650077A7AF /* AudioHelper.swift in Sources */,
 				6021534C1F397C650077A7AF /* Model.xcdatamodeld in Sources */,
@@ -1900,7 +1905,6 @@
 				602153B41F399E9A0077A7AF /* Styles.swift in Sources */,
 				6013F6C01F6F99DB00F83462 /* Setting.swift in Sources */,
 				F24B79971F5555FA001B62A2 /* CustomPresentationController.swift in Sources */,
-				F2E090751F5A6A3900F4409F /* MyWalletViewController.swift in Sources */,
 				602E88411F43DD9600BBB4AF /* Alert.swift in Sources */,
 				602153501F397C650077A7AF /* HappyUser.swift in Sources */,
 				602153511F397C650077A7AF /* LeakAvoider.swift in Sources */,
