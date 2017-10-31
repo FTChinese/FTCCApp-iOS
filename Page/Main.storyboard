@@ -637,10 +637,10 @@
             </objects>
             <point key="canvasLocation" x="-167.19999999999999" y="-244.22788605697153"/>
         </scene>
-        <!--Person Info View Controller-->
+        <!--View Controller-->
         <scene sceneID="2Tg-ze-QQZ">
             <objects>
-                <viewController storyboardIdentifier="PersonInfoViewController" id="ohY-v0-d4g" customClass="PersonInfoViewController" customModule="FTCC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ohY-v0-d4g" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kl3-Ta-xQw"/>
                         <viewControllerLayoutGuide type="bottom" id="lNi-PP-n5P"/>
@@ -740,9 +740,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLC-TB-clX">
                                 <rect key="frame" x="66" y="417" width="19" height="22"/>
                                 <state key="normal" image="MyDownload"/>
-                                <connections>
-                                    <action selector="tapMyDownload:" destination="ohY-v0-d4g" eventType="touchUpInside" id="9H1-Cf-Ppn"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-Lp-AST">
                                 <rect key="frame" x="16" y="498" width="343" height="60"/>
@@ -793,12 +790,6 @@
                             <constraint firstItem="TfF-n2-PZm" firstAttribute="centerX" secondItem="JLC-TB-clX" secondAttribute="centerX" id="zBW-5h-3kc"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="myDownloadView" destination="EUU-U1-VH3" id="pUe-kw-q5v"/>
-                        <outlet property="myLoveView" destination="hSz-yU-mcO" id="Lyc-dE-YJ1"/>
-                        <outlet property="mySettingView" destination="TMb-Lp-AST" id="EEk-Nu-pUw"/>
-                        <outlet property="mySubscribeView" destination="Q8C-Yt-fCb" id="Ynu-o1-1Ez"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-e1-sZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -820,7 +811,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjQ-O6-Ffi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="-378"/>
+            <point key="canvasLocation" x="1414" y="-402"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="I6n-qp-a7U">
+            <objects>
+                <tableViewController id="jlh-Jq-8Bi" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ec6-Pt-AKm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zoe-BO-jUS" customClass="PersonInfoTableViewCell" customModule="FTCC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zoe-BO-jUS" id="27E-iq-d1l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jlh-Jq-8Bi" id="Fnc-rM-oR4"/>
+                            <outlet property="delegate" destination="jlh-Jq-8Bi" id="VLA-Do-kVl"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="infoTableView" destination="ec6-Pt-AKm" id="Ye4-td-j2n"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMd-oa-aDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2229" y="-401"/>
+        </scene>
+        <!--Person Info View Controller-->
+        <scene sceneID="7zw-cr-cIP">
+            <objects>
+                <viewController storyboardIdentifier="PersonInfoViewController" id="VuJ-ZM-8nb" customClass="PersonInfoViewController" customModule="FTCC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nUh-Uc-qbJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cVX-Hf-lGA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eiI-f3-SWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WCI-5y-tWc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoTableView" destination="WCI-5y-tWc" id="L0k-lc-TTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yw-GV-8Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="-387.25637181409297"/>
         </scene>
         <!--Launch Screen-->
         <scene sceneID="7bX-dk-0z9">

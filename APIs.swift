@@ -396,7 +396,28 @@ struct JSCodes {
         }
     }
 }
+// MARK: - person info page
+struct personInfo {
+    static let infoMap:[[String: Any]] = [
+    [
+        "imageName":"MySubscribe",
+        "tagName":"我要订阅"
+    ],
+    [
+       "imageName":"MyDownload",
+        "tagName":"我的下载"
+     ],
+     [
+        "imageName":"MyLove",
+        "tagName":"我的收藏"
+      ],
+     [
+        "imageName":"MySetting",
+        "tagName":"我的设置"
+    ]
+   ]
 
+}
 // MARK: - Setting page
 struct Settings {
     static let page = [
