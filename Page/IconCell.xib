@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,29 +21,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="126" height="158"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNN-Vp-O3x">
-                        <rect key="frame" x="8" y="20" width="110" height="110"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tah-bY-fWn">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="158"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNN-Vp-O3x">
+                                <rect key="frame" x="8" y="8" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bNN-Vp-O3x" secondAttribute="height" multiplier="1:1" id="9rz-1d-JcA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2R-ls-zOt">
+                                <rect key="frame" x="42" y="126" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="bNN-Vp-O3x" secondAttribute="height" multiplier="1:1" id="9rz-1d-JcA"/>
+                            <constraint firstItem="W2R-ls-zOt" firstAttribute="top" secondItem="bNN-Vp-O3x" secondAttribute="bottom" constant="8" symbolic="YES" id="0EW-5Z-WI3"/>
+                            <constraint firstItem="bNN-Vp-O3x" firstAttribute="top" secondItem="Tah-bY-fWn" secondAttribute="topMargin" id="YmR-1g-sft"/>
+                            <constraint firstItem="bNN-Vp-O3x" firstAttribute="centerX" secondItem="W2R-ls-zOt" secondAttribute="centerX" id="b3j-ud-BQ3"/>
+                            <constraint firstItem="bNN-Vp-O3x" firstAttribute="leading" secondItem="Tah-bY-fWn" secondAttribute="leadingMargin" id="cKl-Kc-nrK"/>
+                            <constraint firstItem="bNN-Vp-O3x" firstAttribute="trailing" secondItem="Tah-bY-fWn" secondAttribute="trailingMargin" id="xSC-Tc-KdB"/>
                         </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2R-ls-zOt">
-                        <rect key="frame" x="0.0" y="138" width="126" height="12"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="W2R-ls-zOt" firstAttribute="top" secondItem="bNN-Vp-O3x" secondAttribute="bottom" constant="8" id="0xa-xa-j6C"/>
-                <constraint firstItem="bNN-Vp-O3x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="2sf-mg-hmc"/>
-                <constraint firstItem="bNN-Vp-O3x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="7oD-e9-rLu"/>
-                <constraint firstAttribute="bottom" secondItem="W2R-ls-zOt" secondAttribute="bottom" constant="8" id="CCO-JA-WD4"/>
-                <constraint firstItem="W2R-ls-zOt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ub9-6I-Q9D"/>
-                <constraint firstAttribute="trailing" secondItem="bNN-Vp-O3x" secondAttribute="trailing" constant="8" id="aJP-Dj-w6Q"/>
-                <constraint firstAttribute="trailing" secondItem="W2R-ls-zOt" secondAttribute="trailing" id="nVE-5p-iwJ"/>
-                <constraint firstItem="W2R-ls-zOt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pG9-cP-GKt"/>
+                <constraint firstItem="Tah-bY-fWn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6WV-7l-9SI"/>
+                <constraint firstAttribute="bottom" secondItem="Tah-bY-fWn" secondAttribute="bottom" id="PgE-EH-3xJ"/>
+                <constraint firstAttribute="trailing" secondItem="Tah-bY-fWn" secondAttribute="trailing" id="XLv-Pb-Oyg"/>
+                <constraint firstItem="Tah-bY-fWn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wPo-lL-P2x"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="126" height="158"/>
